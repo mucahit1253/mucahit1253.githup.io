@@ -1,0 +1,62 @@
+*{
+  border-box:box-sizing;
+}
+.header{
+  height:100px;
+  text-align:center;
+  background-color:#88a5a2;
+  
+}
+
+.row{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d4d4d4;
+  
+  
+}
+.nav{
+  background-color: #f4f4f1;
+  height:40px;
+
+}
+.nav a{
+  font-size: 100%;
+  text-decoration :none;
+  color:#656165;
+  
+  display: inline-block;
+  padding:6px 12px;
+  
+}
+.nav a:hover{
+   background-color: #08374e;
+   color:#656165;
+   opacity:0.7;
+}
+.left{
+  float:left;
+  width:30%;
+  min-height:550px;
+  border: 1px solid #838181;
+  
+}
+.main{
+  float:left;
+  width:calc(70% - 6px);
+  min-height:550px;
+  border: 1px solid #838181;
+}
+.row:after{ /*temizlemeliyiz float degerleri row hemen sonra*/
+  content:"";
+  display:table;
+  clear:both;
+}
+.footer{
+  min-height:50px;
+  text-align:center;
+  background-color:#88a5a2;
+}
+.active{
+    background-color:#b7b3b3;
+}
